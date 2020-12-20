@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./fonts/karrik-regular.css" />
     <link rel="stylesheet" href="./fonts/minipax-regular.css" />
     <link rel="stylesheet" href="index.css" />
+    <script src="./lib/p5.min.js"></script>
     <title>documentaries</title>
   </head>
   <body>
@@ -14,7 +15,9 @@
       <a class="home-link">ch1p.shop</a>
     </header>
     <div class="content-container">
-      <h1>a list of documentaries that I like</h1>
+      <h1>An Incomplete List of Documentaries That I Like</h1>
+
+      <p class="subheading">(click the titles to expand)</p>
 
       <div class="documentary-container">
         <h2 class="documentary-title">
@@ -27,47 +30,365 @@
             >wikipedia</a
           >
           <p>
-            Jacques Cousteau shows you how beautiful life is underwater by
-            blowing up a coral reef and accidently running over a whale
+            One of the first documentaries filmed underwater. Cousteau blows up
+            a coral reef and accidentally runs over a whale in his boat.
           </p>
         </div>
       </div>
 
       <div class="documentary-container">
         <h2 class="documentary-title">
-          The Silent World (1956) - Jacques Cousteau
+          Cosmos: A Personal Voyage (1980) - Carl Sagan
         </h2>
         <div class="documentary-info hidden">
           <a
-            href="https://en.wikipedia.org/wiki/The_Silent_World"
+            href="https://en.wikipedia.org/wiki/Cosmos:_A_Personal_Voyage"
             target="”_blank”"
             >wikipedia</a
           >
           <p>
-            Jacques Cousteau shows you how beautiful life is underwater by
-            blowing up a coral reef and accidently running over a whale
+            A documentary series about the universe. This version is way better
+            than the one by Neil deGrasse Tyson.
+          </p>
+        </div>
+      </div>
+
+      <div class="documentary-container">
+        <h2 class="documentary-title">Tokyo-Ga (1985) - Werner Herzog</h2>
+        <div class="documentary-info hidden">
+          <a href="https://en.wikipedia.org/wiki/Tokyo-Ga" target="”_blank”"
+            >wikipedia</a
+          >
+          <p>
+            A film that’s loosely about the director Yasujirô Ozu with extended
+            shots of everyday life in 1980s Tokyo. You should watch
+            <a
+              href="https://www.youtube.com/watch?v=rur5k3BCSI8"
+              target="_blank"
+              >this scene</a
+            >
+            to get a feel for it.
+          </p>
+        </div>
+      </div>
+
+      <div class="documentary-container">
+        <h2 class="documentary-title">Grizzly Man (2005) - Werner Herzog</h2>
+        <div class="documentary-info hidden">
+          <a href="https://en.wikipedia.org/wiki/Grizzly_Man" target="”_blank”"
+            >wikipedia</a
+          >
+          <p>
+            Timothy Treadwell dedicated his life to bears. Werner walks you
+            through his life and grizzly (sorry) end.
           </p>
         </div>
       </div>
 
       <div class="documentary-container">
         <h2 class="documentary-title">
-          The Silent World (1956) - Jacques Cousteau
+          Dear Zachary: A Letter to a Son About His Father (2008) - Kurt Kuenne
         </h2>
         <div class="documentary-info hidden">
           <a
-            href="https://en.wikipedia.org/wiki/The_Silent_World"
+            href="https://en.wikipedia.org/wiki/Dear_Zachary:_A_Letter_to_a_Son_About_His_Father"
+            target="”_blank”"
+            >wikipedia</a
+          >
+          <p>This is a sad story about a father, his murderer and their son.</p>
+        </div>
+      </div>
+
+      <div class="documentary-container">
+        <h2 class="documentary-title">
+          Carts of Darkness (2008) - Murray Siple
+        </h2>
+        <div class="documentary-info hidden">
+          <a
+            href="https://en.wikipedia.org/wiki/Carts_of_Darkness"
             target="”_blank”"
             >wikipedia</a
           >
           <p>
-            Jacques Cousteau shows you how beautiful life is underwater by
-            blowing up a coral reef and accidently running over a whale
+            Homeless people in Vancouver live off the bottle return scheme. In
+            their spare time they ride down hills in shopping carts really fast.
+          </p>
+        </div>
+      </div>
+
+      <div class="documentary-container">
+        <h2 class="documentary-title">
+          Sunshine Hotel (2001) - Michael Dominic
+        </h2>
+        <div class="documentary-info hidden">
+          <a
+            href="https://en.wikipedia.org/wiki/Sunshine_Hotel"
+            target="”_blank”"
+            >wikipedia</a
+          >
+          <p>A look inside New York's last flophouse.</p>
+        </div>
+      </div>
+
+      <div class="documentary-container">
+        <h2 class="documentary-title">Streetwise (1984) - Martin Bell</h2>
+        <div class="documentary-info hidden">
+          <a
+            href="https://en.wikipedia.org/wiki/Streetwise_(1984_film)"
+            target="”_blank”"
+            >wikipedia</a
+          >
+          <p>
+            Follows a group of street kids in Seattle. This one's pretty sad.
+          </p>
+        </div>
+      </div>
+
+      <div class="documentary-container">
+        <h2 class="documentary-title">
+          Angel of Nanjing (2015) - Frank Ferendo, Jordan Horowitz
+        </h2>
+        <div class="documentary-info hidden">
+          <a href="https://en.wikipedia.org/wiki/Chen_Si" target="”_blank”"
+            >wikipedia</a
+          >
+          <p>
+            The Yangtze River Bridge in Nanjing is a suicide hotspot. Chen Si
+            goes down there on his days off and tries to stop people killing
+            themselves.
+          </p>
+        </div>
+      </div>
+
+      <div class="documentary-container">
+        <h2 class="documentary-title">Tickled (2016) - David Farrier</h2>
+        <div class="documentary-info hidden">
+          <a href="https://en.wikipedia.org/wiki/Tickled" target="”_blank”"
+            >wikipedia</a
+          >
+          <p>
+            David Farrier is like a less charismatic Louis Theroux from New
+            Zealand. He investigates a sport called 'Competitive Endurance
+            Tickling' and things get pretty weird.
+          </p>
+        </div>
+      </div>
+
+      <div class="documentary-container">
+        <h2 class="documentary-title">
+          Arena: A British Guide to the End of the World (2019) - Daniel Vernon
+        </h2>
+        <div class="documentary-info hidden">
+          <a href="https://www.bbc.co.uk/programmes/m000b1gn" target="”_blank”"
+            >BBC</a
+          >
+          <p>
+            Cold War in Great Britain. This film shows you the preparations
+            towns were making for when the bomb dropped in London and interviews
+            soldiers who were at the Christmas Island nuclear weapons tests.
+          </p>
+        </div>
+      </div>
+
+      <div class="documentary-container">
+        <h2 class="documentary-title">
+          Inside Story: Mini (1975) - Franc Roddam
+        </h2>
+        <div class="documentary-info hidden">
+          <a href="https://www.bbc.co.uk/programmes/p05nrklh" target="”_blank”"
+            >BBC</a
+          >
+          <p>
+            Mini is an 11 year old kid who compulsively tries to kill his
+            family.
+          </p>
+        </div>
+      </div>
+
+      <div class="documentary-container">
+        <h2 class="documentary-title">Man on Wire (2008) - James Marsh</h2>
+        <div class="documentary-info hidden">
+          <a href="https://en.wikipedia.org/wiki/Man_on_Wire" target="”_blank”"
+            >wikipedia</a
+          >
+          <p>A guy tightrope walks between the Twin Towers.</p>
+        </div>
+      </div>
+
+      <div class="documentary-container">
+        <h2 class="documentary-title">
+          Fourteen Days in May (1987) - Paul Harman
+        </h2>
+        <div class="documentary-info hidden">
+          <a
+            href="https://en.wikipedia.org/wiki/Fourteen_Days_in_May"
+            target="”_blank”"
+            >wikipedia</a
+          >
+          <p>
+            A man's final days on death row before he's executed for a crime he
+            didn't commit.
+          </p>
+        </div>
+      </div>
+
+      <div class="documentary-container">
+        <h2 class="documentary-title">Crumb (1995) - Terry Zwigoff</h2>
+        <div class="documentary-info hidden">
+          <a href="https://en.wikipedia.org/wiki/Crumb_(film)" target="”_blank”"
+            >wikipedia</a
+          >
+          <p>Robert Crumb and his family are really weird.</p>
+        </div>
+      </div>
+
+      <div class="documentary-container">
+        <h2 class="documentary-title">
+          Paris is Burning (1990) - Jennie Livingston
+        </h2>
+        <div class="documentary-info hidden">
+          <a
+            href="https://en.wikipedia.org/wiki/Paris_Is_Burning_(film)"
+            target="”_blank”"
+            >wikipedia</a
+          >
+          <p>All about the ball scene in 1980's New York.</p>
+        </div>
+      </div>
+
+      <div class="documentary-container">
+        <h2 class="documentary-title">The Wolfpack (2015) - Crystal Moselle</h2>
+        <div class="documentary-info hidden">
+          <a href="https://en.wikipedia.org/wiki/The_Wolfpack" target="”_blank”"
+            >wikipedia</a
+          >
+          <p>
+            A family of 7 siblings went 14 years without leaving their parents
+            apartment. For fun they transcribe films and remake them scene for
+            scene with cardboard props.
+          </p>
+        </div>
+      </div>
+
+      <div class="documentary-container">
+        <h2 class="documentary-title">West of Memphis (2012) - Amy J. Berg</h2>
+        <div class="documentary-info hidden">
+          <a
+            href="https://en.wikipedia.org/wiki/West_of_Memphis"
+            target="”_blank”"
+            >wikipedia</a
+          >
+          <p>
+            Three teenagers were sentenced to death for the murder of three 8
+            year old children, supposedly during a satanic ritual. A story about
+            police incompetence and the Satanic Panic of America in the 80s/90s.
+          </p>
+        </div>
+      </div>
+
+      <div class="documentary-container">
+        <h2 class="documentary-title">
+          The Century of the Self (2002) - Adam Curtis
+        </h2>
+        <div class="documentary-info hidden">
+          <a
+            href="https://en.wikipedia.org/wiki/The_Century_of_the_Self"
+            target="”_blank”"
+            >wikipedia</a
+          >
+          <p>
+            Examines the origins of consumerism in popular culture and the use
+            of psychoanalysis to sell products.
+          </p>
+        </div>
+      </div>
+
+      <div class="documentary-container">
+        <h2 class="documentary-title">Bitter Lake (2015) - Adam Curtis</h2>
+        <div class="documentary-info hidden">
+          <a
+            href="https://en.wikipedia.org/wiki/Bitter_Lake_(film)"
+            target="”_blank”"
+            >wikipedia</a
+          >
+          <p>
+            An archive footage documentary about America's relationship with
+            Saudi Arabia and western interference in Afghanistan.
+          </p>
+        </div>
+      </div>
+
+      <div class="documentary-container">
+        <h2 class="documentary-title">Reverend Death (2008) - Jon Ronson</h2>
+        <div class="documentary-info hidden">
+          <a href="https://en.wikipedia.org/wiki/George_Exoo" target="”_blank”"
+            >wikipedia</a
+          >
+          <p>
+            George Exoo helps with assisted suicides when other organisations
+            won't. Jon Ronson is amazing and did loads of good docs for the BBC
+            in the noughties, many of them are on Youtube.
+          </p>
+        </div>
+      </div>
+
+      <div class="documentary-container">
+        <h2 class="documentary-title">
+          The Man Whose Mind Exploded (2013) - Toby Amies
+        </h2>
+        <div class="documentary-info hidden">
+          <a
+            href="https://en.wikipedia.org/wiki/The_Man_Whose_Mind_Exploded"
+            target="”_blank”"
+            >wikipedia</a
+          >
+          <p>
+            A film about Drako Oho Zarharzar who can't form new memories after
+            suffering a head injury. His flat is covered with pieces of paper
+            that he uses to keep track of his life.
+          </p>
+        </div>
+      </div>
+
+      <div class="documentary-container">
+        <h2 class="documentary-title">
+          In the Realms of the Unreal (2004) - Jessica Yu
+        </h2>
+        <div class="documentary-info hidden">
+          <a
+            href="https://en.wikipedia.org/wiki/In_the_Realms_of_the_Unreal"
+            target="”_blank”"
+            >wikipedia</a
+          >
+          <p>
+            Henry Darger was an artist who wrote and illustrated really long
+            fantasy books (15,000 pages). His life's work was discovered by his
+            landlord just after his death.
           </p>
         </div>
       </div>
     </div>
+    <footer>
+      <div>
+        <p>Credits:</p>
+        <p>
+          Fonts:
+          <a href="http://velvetyne.fr/fonts/minipax/"
+            ><span class="minipax-credit">Minipax</span></a
+          >
+          /
+          <a href="http://velvetyne.fr/fonts/karrik/"
+            ><span class="karrik-credit">Karrik</span></a
+          >
+          | Background inspiration:
+          <a href="https://p5js.org/examples/simulate-flocking.html"
+            >Flocking</a
+          >
+        </p>
+      </div>
+    </footer>
 
+    <script src="sketch.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
