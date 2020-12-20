@@ -69,6 +69,7 @@ h2 {
   font-family: MinipaxRegular, serif;
   color: rgb(71, 71, 71);
   padding: 1em 0;
+  font-size: 1.2em;
 }
 .documentary-info > a {
   display: block;
@@ -105,6 +106,9 @@ h2:hover {
   }
   .documentary-container {
     margin-bottom: 2rem;
+  }
+  .documentary-info > p {
+    font-size: 1em;
   }
 }
 
