@@ -1,3 +1,5 @@
+// Set up collapsing containers
+
 const documentaryContainers = document.querySelectorAll(
   ".documentary-container"
 );
@@ -29,3 +31,7 @@ function hideAllDescriptions() {
     container.classList.add("hidden");
   });
 }
+
+//Count Documentaries
+const documentaryCounter = document.getElementById("documentary-counter");
+documentaryCounter.innerText = documentaryContainers.length;
