@@ -1,12 +1,3 @@
-/* apply a natural box layout model to all elements, but allowing components to change */
-html {
-  box-sizing: border-box;
-}
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
 body {
   font-family: MinipaxRegular, serif;
 }
@@ -16,21 +7,6 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
-}
-
-.site-header {
-  font-family: KarrikRegular, sans-serif;
-  color: white;
-  background-color: black;
-  height: 4rem;
-  display: flex;
-
-  justify-content: start;
-  align-items: center;
-}
-.home-link {
-  font-size: 2em;
-  padding: 0.5em;
 }
 
 h1,

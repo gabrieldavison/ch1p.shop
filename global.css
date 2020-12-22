@@ -1,0 +1,27 @@
+/* Adds box sizing border box to all elements */
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Styles Site header */
+
+.site-header {
+  font-family: Arial, sans-serif;
+  color: white;
+  background-color: black;
+  height: 4rem;
+  display: flex;
+
+  justify-content: start;
+  align-items: center;
+}
+.home-link {
+  font-size: 2em;
+  padding: 0.5em;
+}

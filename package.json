@@ -1,0 +1,25 @@
+{
+  "name": "ch1p.shop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrieldavison/ch1p.shop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabrieldavison/ch1p.shop/issues"
+  },
+  "homepage": "https://github.com/gabrieldavison/ch1p.shop#readme",
+  "dependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
