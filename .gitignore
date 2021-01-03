@@ -1,2 +1,4 @@
 .pretierrc
 node_modules
+.cache
+dist

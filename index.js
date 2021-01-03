@@ -1,1 +1,1 @@
-window.location.replace("./pages/documentaries");
+window.location.replace("./pages/documentaries/index.html");
