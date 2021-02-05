@@ -22,7 +22,11 @@ h1 {
   margin-top: 3em;
   margin-bottom: 3em;
 }
-
+.home-link {
+  text-decoration: none;
+  color: white;
+  font-family: monospace;
+}
 h2 {
   margin-bottom: 1rem;
   font-size: 2em;

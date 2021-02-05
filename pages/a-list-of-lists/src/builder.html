@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Builder</title>
+  </head>
+  <body>
+    <h1>Load your markdown and template files</h1>
+    <label for="md-input">
+      markdown
+      <input id="md-input" type="file" />
+    </label>
+    <label for="template-input">
+      template
+      <input id="template-input" type="file" />
+    </label>
+    <button id="build-button">build</button>
+    <script type="module">
+      import mustache from "https://cdn.skypack.dev/mustache";
+      import commonmark from "https://cdn.skypack.dev/commonmark";
+      import marked from "https://cdn.skypack.dev/marked";
+
+      const mdInput = document.getElementById("md-input");
+      const templateInput = document.getElementById("template-input");
+      const buildButton = document.getElementById("build-button");
+      buildButton.addEventListener("click", buildPage);
+
+      async function buildPage() {
+        //convert files to strings
+        const mdString = await readFile(mdInput.files[0]);
+        const templateString = await readFile(templateInput.files[0]);
+        //Convert markdown to html
+        const mdHtml = marked(mdString);
+        //Render template
+        const renderedTemplate = mustache.render(templateString, {
+          content: mdHtml,
+        });
+        //Download file
+        const dataBlob = new Blob([renderedTemplate], { type: "text/html" });
+        const dataURL = URL.createObjectURL(dataBlob);
+        const downloadLink = document.createElement("a");
+        downloadLink.download = "index.html";
+        downloadLink.href = dataURL;
+        document.body.appendChild(downloadLink);
+        downloadLink.click();
+        document.body.removeChild(downloadLink);
+      }
+
+      function renderMarkdown(data) {
+        var writer = new commonmark.HtmlRenderer();
+        return writer.render(data);
+      }
+
+      function parseMarkdown(data) {
+        var reader = new commonmark.Parser();
+        return reader.parse(data);
+      }
+
+      function readFile(file) {
+        return new Promise((resolve, reject) => {
+          let reader = new FileReader();
+          reader.onload = () => {
+            resolve(reader.result);
+          };
+          reader.onerror = reject;
+          reader.readAsText(file);
+        });
+      }
+    </script>
+  </body>
+</html>

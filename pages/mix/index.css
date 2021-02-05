@@ -6,3 +6,41 @@
   width: 100vw;
   height: 100vh;
 }
+
+.track-list {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-size: 1.5em;
+  width: 250px;
+  border: 1px solid white;
+  font-family: monospace;
+}
+
+.track-list-header {
+  font-size: 2em;
+  border-bottom: 1px solid white;
+  padding: 0.2em;
+  /* color: black;
+  background-color: white; */
+}
+
+.list-wrapper {
+  height: 250px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.list-wrapper:hover {
+  overflow-y: scroll;
+}
+
+.track-list li {
+  padding: 0.4em;
+  border-bottom: 1px dotted white;
+}
+
+.draggable {
+  position: absolute;
+  z-index: 9;
+
+  cursor: move;
+}

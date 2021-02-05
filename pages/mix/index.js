@@ -1,4 +1,6 @@
-console.log("test");
+import "./draggable.js";
+import "./sketch.js";
+
 window.onload = () => {
   const hydraCanvas = document.getElementById("hydra-canvas");
   const hydra = new Hydra({
@@ -12,6 +14,10 @@ window.onload = () => {
 };
 
 function scene1() {
+  s2.init({ src: document.getElementById("p5-canvas") });
+
+  src(s2).out(o2);
+
   osc(105)
     .color(0.5, 0.1, 0.8)
     .rotate(0.11, 0.1)

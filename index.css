@@ -1,0 +1,8 @@
+.map-container {
+  text-align: center;
+}
+.map-container pre {
+  margin-top: 5rem;
+  display: inline-block;
+  text-align: left;
+}
